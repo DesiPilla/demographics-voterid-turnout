@@ -13,6 +13,9 @@ Overall, after the 2010 election, 25 states have implemented new restrictions bu
 
 The citizens’ participation in elections is as vital as its existence in the United States. Voter turnout (GGD: you have already discussed voter turn out above, so this defition should be moved up), which is the percentage of the eligible voters, who vote for a candidate or a party, is very important for delegating representatives and expressing citizens’ opinion in politics [(Campbell, et al 1981)](https://books.google.com/books?hl=en&lr=&id=JeYUrs_GOcMC&oi=fnd&pg=PA18&dq=Campbell,+Angus,+Philip+E.+Converse,+Warren+E.+Miller,+and+Donald+E.+Stokes.+The+american+voter.+University+of+Chicago+Press,+1980.&ots=wGiCCHXpw7&sig=D8o88pfKXmonSJyPnRj6yAtBiis#v=onepage&q=Campbell%2C%20Angus%2C%20Philip%20E.%20Converse%2C%20Warren%20E.%20Miller%2C%20and%20Donald%20E.%20Stokes.%20The%20american%20voter.%20University%20of%20Chicago%20Press%2C%201980.&f=false). Voter turnout is a significant indicator of a healthy democracy [(Essays, UK., 2018)](<https://www.ukessays.com/essays/politics/the-importance-of-voter-turnout-politics-essay.php?vref=1>). There are factors that affects voter turnout. Electoral competitiveness, election type, demographics and voting laws play crucial role on voter turnout [(Fair Vote)]( https://www.fairvote.org/what_affects_voter_turnout_rates). Demographics characteristics are one of the most important predictor of voter turnout. Those characteristics such as race, sex, religion, income, education level etc., are highly correlated with political participation [(Brady, et al, 1995)](https://www.cambridge.org/core/journals/american-political-science-review/article/beyond-ses-a-resource-model-of-political-participation/CE74BA78807755F0A09E589D631EB03E). Competitiveness is also another important factor that appeals citizens’ attention on elections. Some election types seem to be less important than others for citizens. Voting laws suppress voter turnout, particularly among those who are demographically disadvantaged and lack the resources to overcome the maze of bureaucratic requirements [(Kelley, et al, 1967)](https://www.cambridge.org/core/journals/american-political-science-review/article/registration-and-voting-putting-first-things-first1/980C4232B8DF72D99DE1551FB2E660A6). Rosenstone and Wolfinger even argue that “registration is more difficult than voting.” [(Rosenstone, Wolfinger, 1978)](https://www.cambridge.org/core/journals/american-political-science-review/article/effect-of-registration-laws-on-voter-turnout/E9ED1FC9155FE2CB1874D67C40F4591F) (GGD: the sentences in this paragraph have information that should be integrated throughout the previous text. It is out of place here as you have already discussed voter participation above as well as very forms of voter suppression, etc.)
 
+
+
+
 ## Problem Statement
 
 This project will investigate two primary issues relating to voting-eligible demographics, voter ID requirements and voter turnout. The scope of this study has been restricted to the 2016 presidential election. While the results from this study may not necessarily be extrapolated to all local and national elections, our goal is to provide an initial exploration of the correlations among demographics, voter ID laws and voter turnout.
@@ -46,6 +49,9 @@ In conjunction with the second problem explored in this project, we would like t
 The following graphic is a representation of the relationships this project seeks to explore.
 ![flow chart](http://udel.edu/~dmpilla/mlpp_flow.png)
 
+
+
+
 ## Data Description
 
 All of the datasets in this research are publicly available. The geospatial files, which includes shapefiles for each county and states in the US, are come from the [Census Bureau’s MAF/TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) geographic database. For the states’ geospatial data, it includes each states’ name, FIPS code, and shapefiles. For the counties’ geospatial data, it has each county’s name, FIPS code, state FIPS code, and shapefiles. The Census Bureau’s MAF/TIGER geographic database do not include demographic data but the FIPS code could be linked to other datasets. 
@@ -73,3 +79,25 @@ Last but not least, our voter turnout contains the election results for the 2016
 The focus of the study is to understand the factors that affect voter turnout based on the 2016 presidential elections data in the United States. The data helps us to see the voter turnout rates in both county and state levels. Thus, we can study how demographics and voter ID laws affect voter turnout rates.
 
 In general, since our research is focusing on the comparison across the counties/states. We are mainly using proportions to unify standards
+
+
+
+
+## Data Limitations
+
+[Census Bureau’s MAF/TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) geographic database is compiled from different secondary resource maps and materials produced by the national mapping agencies, other government departments and [international agencies](https://unstats.un.org/unsd/demog/docs/symposium_08.htm). 
+The database has [limitations](https://www.census.gov/programs-surveys/geography/technical-documentation/naming-convention/cartographic-boundary-file.html
+) and these files should not be used for:
+geographic analysis including area or perimeter calculation.
+geocoding addresses.
+determining precise geographic area relationships.
+The geographic areas may also not align with the same areas from another year.
+
+
+It is worth mentioning that [Content Editing](https://www2.census.gov/programs-surveys/acs/tech_docs/accuracy/MultiyearACSAccuracyofData2018.pdf?#) was conducted on the ACS data. This means that after data collection was completed, the remaining incomplete or inconsistent information was imputed during the final content edit of the collected data. As was done in other surveys and previous censuses, unacceptable entries were assigned to entries for persons or housing units with similar characteristics. Imputing acceptable values in place of blanks or unacceptable entries was done to enhance the usefulness of the data.
+
+Also, data from ACS is only available for geographic areas with a total population of at least [65,000]( http://mcdc.missouri.edu/help/ten-things/ACS.html). This is done to avoid creating tables where the sample size would result in large standard errors (sampling error) [(ACS 5-year 2014-2018)](https://www.census.gov/content/dam/Census/library/publications/2018/acs/acs_general_handbook_2018_ch02.pdf
+).
+
+Our data is limited by few counts of missing information. This first limitation to note is that the value used for the count of young people is not exact. The original dataset only provided the population size of the age range `15-19`. However, the minimum voting age in the United States is 18. We made the assumption that the population of each age in that range is evenly distributed. 40% of this value (representing voting ages 18 and 19) were used in the counts of young people. Also, a single county (Oglala Lakota County) in South Dakota is missing from the turnout dataset. Because it is only one out of over 3000 counties, we are okay moving forward without this piece of information. Finally, Alaska only reported their election results at the state level.; county-specific results are unavailable. For this reason, county-specific analyses cannot be conducted when considering the state of Alaska. This should not affect the analyses of this study, as it is only one state being excluded.
+
