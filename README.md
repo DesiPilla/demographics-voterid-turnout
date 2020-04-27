@@ -47,7 +47,7 @@ These questions will investigate which demographic groups are less likely to vot
 In conjunction with the second problem explored in this project, we would like to explore whether voter ID requirements influence voter turnout rates. It is inherently reasonable to assume that voter turnout is higher in states with more relaxed laws, and vice versa. This study will explore that hypothesis and examine whether voter turnout rates are more accurately predicted when including voter ID requirements with county demographic information.
 
 The following graphic is a representation of the relationships this project seeks to explore.
-![flow chart](http://udel.edu/~dmpilla/mlpp_flow.png)
+![flow chart](pictures/mlpp_flow.png)
 
 
 
