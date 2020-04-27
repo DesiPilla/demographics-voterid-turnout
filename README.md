@@ -12,3 +12,38 @@ Recently, many researchers have analyzed the relationship between the severity o
 Overall, after the 2010 election, 25 states have implemented new restrictions but these have been the subject of significant debate [(Brennan Center for Justice, 2019)](https://www.brennancenter.org/our-work/research-reports/new-voting-restrictions-america). The proponents state it will decrease voter fraud and discourage non-citizens from voting, increase public confidence in the integrity of democracy, and ensure a one-vote-per-person system [(Spakocsky, 2012)](https://www.usnews.com/debate-club/should-photo-id-be-required-to-vote/voter-id-laws-protect-the-integrity-of-our-democracy). The opponents argue that it will disproportionately disadvantage black and Latino voters, the elderly, people with past criminal convictions, and students [(Rocha & Matsubayashi, 2014)](https://pdfs.semanticscholar.org/ebae/a2e713c62f19004c57894fd38398b998960e.pdf?_ga=2.221962072.1117407631.1585975384-1554961354.1585975384); They also contend that voting fraud is so rare that requiring an ID is unnecessary and costly [(Lott, 2006)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=925611).
 
 The citizens’ participation in elections is as vital as its existence in the United States. Voter turnout (GGD: you have already discussed voter turn out above, so this defition should be moved up), which is the percentage of the eligible voters, who vote for a candidate or a party, is very important for delegating representatives and expressing citizens’ opinion in politics [(Campbell, et al 1981)](https://books.google.com/books?hl=en&lr=&id=JeYUrs_GOcMC&oi=fnd&pg=PA18&dq=Campbell,+Angus,+Philip+E.+Converse,+Warren+E.+Miller,+and+Donald+E.+Stokes.+The+american+voter.+University+of+Chicago+Press,+1980.&ots=wGiCCHXpw7&sig=D8o88pfKXmonSJyPnRj6yAtBiis#v=onepage&q=Campbell%2C%20Angus%2C%20Philip%20E.%20Converse%2C%20Warren%20E.%20Miller%2C%20and%20Donald%20E.%20Stokes.%20The%20american%20voter.%20University%20of%20Chicago%20Press%2C%201980.&f=false). Voter turnout is a significant indicator of a healthy democracy [(Essays, UK., 2018)](<https://www.ukessays.com/essays/politics/the-importance-of-voter-turnout-politics-essay.php?vref=1>). There are factors that affects voter turnout. Electoral competitiveness, election type, demographics and voting laws play crucial role on voter turnout [(Fair Vote)]( https://www.fairvote.org/what_affects_voter_turnout_rates). Demographics characteristics are one of the most important predictor of voter turnout. Those characteristics such as race, sex, religion, income, education level etc., are highly correlated with political participation [(Brady, et al, 1995)](https://www.cambridge.org/core/journals/american-political-science-review/article/beyond-ses-a-resource-model-of-political-participation/CE74BA78807755F0A09E589D631EB03E). Competitiveness is also another important factor that appeals citizens’ attention on elections. Some election types seem to be less important than others for citizens. Voting laws suppress voter turnout, particularly among those who are demographically disadvantaged and lack the resources to overcome the maze of bureaucratic requirements [(Kelley, et al, 1967)](https://www.cambridge.org/core/journals/american-political-science-review/article/registration-and-voting-putting-first-things-first1/980C4232B8DF72D99DE1551FB2E660A6). Rosenstone and Wolfinger even argue that “registration is more difficult than voting.” [(Rosenstone, Wolfinger, 1978)](https://www.cambridge.org/core/journals/american-political-science-review/article/effect-of-registration-laws-on-voter-turnout/E9ED1FC9155FE2CB1874D67C40F4591F) (GGD: the sentences in this paragraph have information that should be integrated throughout the previous text. It is out of place here as you have already discussed voter participation above as well as very forms of voter suppression, etc.)
+
+## Problem Statement
+
+This project will investigate two primary issues relating to voting-eligible demographics, voter ID requirements and voter turnout. The scope of this study has been restricted to the 2016 presidential election. While the results from this study may not necessarily be extrapolated to all local and national elections, our goal is to provide an initial exploration of the correlations among demographics, voter ID laws and voter turnout.
+The first problem of this project will investigate how voter ID requirements differ among states with varying demographic populations. Questions we will seek to answer include
+What is the relationship between minority populations and voter ID 
+
+*   What is the relationship between minority populations and voter ID requirements? (For example: Do states with higher minority populations have stricter voter ID requirements?)
+
+*   What is the correlation between education level and voter ID requirements? (For example: Do states with a lower proportion of college graduates have stricter voter ID requirements?)
+*   What is the relationship between income and voter ID requirements? (For example: Do states with a lower median household income have stricter voter ID requirements?)
+
+*   What is the correlation between the proportion of young voters and voter ID requirements? (For example: Do states with a higher proportion of young voters have stricter voter ID requirements?)
+
+These questions will be used to evaluate the correlation between demographic characteristics and voter ID laws. By looking at various demographic characteristics across the states, we would like to find the possible driver of the voter ID laws, see which characteristic might have a higher probability to enact voter ID laws. This correlation will be used to inform discussions and decision making regarding the enacting of these laws more broadly. This study will not try to uncover biases that are not there, but merely explore the space and see if any exist. 
+
+The second problem our project will investigate is how voter turnout rates are affected by demographic makeup at the county level. Questions we will seek to answer include
+
+
+
+*   Do states with higher minority populations have lower turnout rates?
+
+*   How does the voter turnout of counties with a higher percentage of college graduates compare to counties with a lower percentage of college graduates?
+
+*   How does median household income impact election turnout rates?
+
+*   How does the voter turnout in counties with a younger voting-eligible population compare to voter turnout in counties with an older voting-eligible population?
+
+These questions will investigate which demographic groups are less likely to vote within the context of the 2016 election, and explore how voter turnout scales with the demographics of a county as well as the extent to which voter turnout can be predicted by a county’s demographic composition.
+In conjunction with the second problem explored in this project, we would like to explore whether voter ID requirements influence voter turnout rates. It is inherently reasonable to assume that voter turnout is higher in states with more relaxed laws, and vice versa. This study will explore that hypothesis and examine whether voter turnout rates are more accurately predicted when including voter ID requirements with county demographic information.
+
+The following graphic is a representation of the relationships this project seeks to explore.
+![flow chart](http://udel.edu/~dmpilla/mlpp_flow.png)
+
+
