@@ -1,3 +1,7 @@
+# Purpose
+
+This is the final project for the course Machine Learning for Public Policy (UAPP 667) at the University of Delaware. The course instructor is Dr. Gregory Dobler. The team members associated with this project are Grace Ashley, Muhammet Furkan Karakaya, Desiderio Pilla, and Lan Yu. All are graduate students at UD.
+
 # Introduction
 
 ## Background
@@ -51,6 +55,7 @@ The following graphic is a representation of the relationships this project seek
 
 
 
+# Data Exploration
 
 ## Data Description
 
