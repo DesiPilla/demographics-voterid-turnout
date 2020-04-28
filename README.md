@@ -114,30 +114,43 @@ Our data is limited by few counts of missing information. This first limitation 
 ### Demographic Data
 
 ![median household income chart](pictures/median_household_income.png)
+
 This figure shows the median household income of each county in the US. The wealthiest counties are those in the Northeastern corridor, as well as those surrounding the San Francisco Bay area and Midwest. Some counties in the midwest are also wealthier. However, the dark shade of the plot highlights how many counties across the US have median household incomes around $40,000 or lower, especially those in the southeast.
 
+
 ![education rate chart](pictures/college_graduates.png)
+
 This figure shows the percentage of voting eligble persons in each county that hold either a Bachelor's or Master's degree. The most educated counties are those in the Northeastern corridor, as well as those in Colorado. Counties in the mountain states (Arizona, Idaho, Nevada, and Utah) appear to have lower rates of college education. Spread across the nation are counties with high rates, but they are sparse and few.
 
+
 ![median age chart](pictures/median_age.png)
+
 This figure shows the median age of each county in the US. This feature appears to be evenly distributed across the Eastern half of the country. Southern Florida, as well as the Northern most regions of the country, appear to have older populations. The mountain states appear to have younger populations.
 
+
 ![age distributions chart](pictures/age_distributions.png)
+
 This figure shows the percentage of voting eligible persons in each county that fall into distinct age categories. The largest category for nearly all counties is the `Age 35 to 59` bucket. The age range is the largest of the three, however. These figures are mostly evenly distributed.
 
+
 ![unemployment rate chart](pictures/unemployment_rate.png)
+
 This figure shows the unemployment rate of voting eligible persons in each county in the US. The unemployment rate tends to be higher in southern counties than in northern ones. Counties in the Boston and midwest regions have very low unemployment rates.
 
 
 ### Voter ID Requirements
 
 ![voter id requirments chart](pictures/voter_id_requirements.png)
+
 This figure shows the voting ID laws that each state subscribes to. There are five classes of voting ID requirements. Most states touching the southern border of the US fall into the 3 strictes categories. The states adhering to the strictest ID policy are all on the eastern side of the country. The northeastern and western-most states make up the most voter-friendly states, as they have very relaxed ID policies.
 
+
 ![voter id law counts chart](pictures/voter_id_law_counts.png)
+
 This figure shows the number of states that fall into the different voting ID law categories. The plot shows that more states favor relaxed ID laws than strict ones.
 
 ### Voter Turnout Data
 
 ![turnout rate chart](pictures/turnout.png)
+
 This figure shows the percentage of voting eligible persons that casted a ballot in the 2016 Presidential general election. The turnout rate was relatively high nationwide. Turnout rates in the counties along the southwestern counties were much lower than those in northern counties. Counties in the Great Plains, Colorado, and Boston regions had the highest turnout rates.
