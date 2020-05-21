@@ -257,11 +257,83 @@ These different clusterings can then be compared to one another using the Fowlke
 
 **Figure:** The above figure shows that there **were** significant differences between the Voter ID laws between the five demographic county clusters. The cluster with the strictest requirements was cluster 1, which we discovered was comprised of mostly southern counties. Clusters 3 and 4 (which we discovered contained mostly northern and urban counties, respectively) had the most relaxed Voter ID requirements.
 
-![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/turnout_anova_idlaw.png?raw=true)
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/turnout_anova.png?raw=true)
 
 **Figure:** The above figure shows that there **were** significant differences between the Voter ID laws between the five demographic county clusters. Clusters 1 and 5 had the lowest turnout rates. Cluster 1 was also found to have the strictest Voter ID requirements. Clusters 3 and 4 (which we discovered contained mostly northern and urban counties, respectively) had the highest turnout rates. We also noted in the previous chart that these clusters had the most relaxed Voter ID requirements.
 
-![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/turnout_anova.png?raw=true)
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/turnout_anova_idlaw.png?raw=true)
 
 
 **Figure:** The above figure shows that there **were** significant differences between the the turnout rates of counties subject to different Voter ID laws. However, the turnout rate does not show a trend; the turnout rate does not appear to exclusively decrease or increase with a change in the Voter ID requirement.
+
+---
+
+#### Compare the demographic clusters to the Voter ID Law clusters
+
+First, we can compare the clusters using the Fowlkes-Mallows Index. "The [Fowlkes-Mallows Score](https://www.geeksforgeeks.org/ml-fowlkes-mallows-score/) is an evaluation metric to evaluate the similarity among clusterings obtained after applying different clustering algorithms." This value can range from 0, indicating the most dissimilarity between clusterings, to 1, indicating exactly identical clusterings.
+
+The Fowlkes Mallows index for the demographic clustering vs. the Voter ID law clustering was low (0.260), which indicates that these two clusters are not very similar.
+
+We can also compare the clusters using their inertia. The **inertia** of a clustering is the sum of squared intra-cluster distances. Smaller values are more desirable, as they indicate that the set is composed of partitions the maximize the similarity between observations. Our clusterings both have the same number of partitions, so this is an acceptable metric to use.
+
+When observing the inertia of each clustering on the turnout rates of the counties, the demographic clustering a value 1.18 times smaller than the Voter ID law clustering. This supports the claim that counties were more likely to have turnout rates similar to other counties with the same demographic makeup than they were to have similar turnout rates to outher counties with the same Voter ID law.
+
+
+
+### Clustering at the State Level
+**Question**
+
+Were states more likely to have similar turnout rates to other states with:
+
+* similar demographic composition or
+* the same Voter ID law
+
+</br>
+
+**Method**
+
+We will create two separate clusterings.
+
+1. Using k-means clustering, partition the states based on demographic features.
+2. Partition the states based on their Voter ID requirements (there are five categories, and thus five clusters).
+
+These different clusterings can then be compared to one another using the Fowlkes-Mallows index to see how similar they are. The inertia for the clusterings (on the states' respective turnout data) can also be calculated to see which clustering was better able to partition the county data.
+
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/state%20demographic%20cluster/clusters.png?raw=true)
+
+**Figure:** This figure shows a plot of all states, categorized by their demographic similarity. States were split into 5 clusters, where they were grouped by the similarity in their demographic makeup. Note that the District of Columbia is the only state in cluster 5
+
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/state%20demographic%20cluster/idlaw_cluter_1.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/state%20demographic%20cluster/idlaw_cluter_2.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/state%20demographic%20cluster/idlaw_cluter_3.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/state%20demographic%20cluster/clusters.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/state%20demographic%20cluster/idlaw_cluter_4.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/state%20demographic%20cluster/idlaw_cluter_5.png?raw=true)
+
+**Figure:** The figures above show the Voter ID Requirements of the states in each demographic cluster. Overall, it is possible to say that the state voter ID laws are not aligned with state demographics because each cluster contains multiple voter ID law categories (except for the last cluster, which only contains one state).
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/state%20demographic%20cluster/idlaw_by_cluster.png?raw=true)
+
+
+**Figure:** The above figure shows that there were **not** significant differences between the Voter ID laws and the five demographic state clusters. The cluster with the strictest requirements where clusters 2 and 4. Cluster 3 had the most relaxed Voter ID laws.
+
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/state%20demographic%20cluster/turnout_by_idlaw.png?raw=true)
+
+**Figure:** The above figure shows that there **were not** significant differences between the turnout rates of states with different Voter ID laws. However, the turnout rate does not show a trend; the turnout rate does not appear to exclusively decrease or increase with a change in the Voter ID requirement. This is in line with our findings at the county level.
+
+
+#### Compare the demographic clusters to the Voter ID Law clusters
+
+As before, we first compare the clusters using the Fowlkes-Mallows index.
+
+The Fowlkes Mallows index for the demographic clustering vs. the Voter ID law clustering was low (0.243), which indicates that these two clusters are not very similar.
+
+When observing the inertia of each clustering on the turnout rates of the states, the demographic clustering a value 1.03 times smaller than the Voter ID law clustering. This supports the claim that states were more likely to have turnout rates similar to other states with the same demographic makeup than they were to have similar turnout rates to outher states with the same Voter ID law.
