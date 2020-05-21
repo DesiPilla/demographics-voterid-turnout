@@ -373,3 +373,52 @@ These two models can then be compared based on their mean square error (MSE) and
 |MAE|4.88%|5.73%|
 
 From the above metrics, it is more clear that the Random Forest model is better able to predict the turnout rates of a county from its demographic makeup.
+
+
+
+# Conclusions
+
+Let us revist what the initial questions were that we set at out to investigate.
+
+---
+
+**How do voter ID requirements differ among states with varying demographic populations?**
+
+As Voter ID laws are regulated at the state level, our analyses explored the relationship between state-wide demographics and Voter ID laws.
+
+* What is the relationship between minority populations and voter ID requirements?
+* What is the relationship between education level and voter ID requirements?
+* What is the relationship between income and voter ID requirements?
+* What is the correlation between the proportion of young voters and voter ID requirements? 
+
+We did not find any statistically significant differences in Voter ID laws for states with different demographic features. Furthermore, there did not appear to be a directional trend in the data. I.e.,  states with a higher proportion of minority residents, a higher proportion of college graduates, or a higher median household income, did not tend to have stricter Voter ID laws. The only feature with a trend was the `Median Age` paramter. States with a higher proportion of young voters *did* have higher Voter ID laws, but difference was not significant. However, it is important to note that the sample size was quite small; there are only 50 states and territories. 
+
+As visible in the maps of individual state demographic clusters, clusters each had a variety of different Voter ID laws represented. The demographic clusters did not align with the Voter ID classes that states adhere to. Overall, distinguishing states by their demographics and by their Voter ID laws resulted in very different partitionings.
+
+At the county level, there did appear to be significant differences in Voter ID laws across counties of different demographic makeup. Yet, Voter ID policy is mandated at the state level, and as such, this study did not investigate this further. Future studies that explore which counties are adversely affected by Voter ID laws and possible reasons why could provide beneficial insight into this discrepancy.
+
+---
+
+**How are voter turnout rates affected by demographic makeup at the county level?**
+
+Because voter turnout datat is available at the county level, and can vary immensely across a state, we conducted this analysis at the county-level.
+
+* Do counties with higher minority populations have lower turnout rates?
+* How does the voter turnout of counties with a higher percentage of college graduates compare to counties with a lower percentage of college graduates?
+* How does median household income relate to election turnout rates?
+* How does the voter turnout in counties with a younger voting-eligible population compare to voter turnout in counties with an older voting-eligible population?
+
+We did find statistically significant differences in turnout rates for each of these demographic features. Counties with higher minority populations had *lower* turnout rates, on average. Counties with a higher percentage of college graduates had *higher* turnout rates, on average. Counites with higher median household incomes had *higher* turnout rates, on average. And lastly, counties with a higher median age had *higher* turnout rates, on average. For each of these demographic features, there *was* a directional trend consistent with the previous statements. The sample size for this analysis was much larger, as there are many more counties than states.
+
+In the clustering model, we found that counties with different demographic makeup *did* have different turnout rates as well. By examining the feature importances of the Random Forest models, we see that some of the largest factors (of those considered) in predicting the turnout rate of a county were the proportion of voters that were *young* (under the age of 35), median household income, and the unemployment rate. The SGD model also found these features to be important, as well as the percentage of voters with a college degree, the median age, and percentage of *old* voters (60 and older).
+
+---
+
+
+**Do Voter ID laws influence voter turnout rates?**
+
+In our statistical analyses, we found that there was no statistically significant difference in turnout rates across *states* with different Voter ID laws. The turnout rate was rouhgly the same for each Voter ID class. However, *counties* subject to different Voter ID laws did have different turnout rates. Again, one difference is that there are many more counties than states, and thus the reliability of the mean turnout rate is much higher. Though, there are two reasons that this significance may not be as meaningful in practice. 
+
+First, there was no trend in turnout rate. Meaning, there were not lower turnout rates in counties subject to stricter laws, and vice versa. While counties saw a difference across all Voter ID classes, there was no trend suggesting stricter laws produced lower turnout rates.
+
+Second, from the feature importances of both the Random Forest and SGD models, we see that Voter ID requirement was the least and 3rd-least, respectively, important feature when predicting turnout rates. This suggests that any relevance of Voter ID laws is strongly overshadowed by the importance of demographic features, specifically at the county level.
