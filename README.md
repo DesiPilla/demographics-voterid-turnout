@@ -362,7 +362,7 @@ These two models can then be compared based on their mean square error (MSE) and
 
 **Figure:** This chart shows the Random Forest and SGD model predictions vs the actual turnout rates. The red line represents a "perfect" fit. We can see that our predictions tend to this line quite well, and do so with similar variance for both low and high turnout rates. From this figure, it is not trivial whether one model has a better performance than the other.
 
-![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/rf_vs_sgd.png?raw=true)
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/rf_vs_sgd_feature_importance.png?raw=true)
 
 **Figure:** This figure shows the difference in feature importances between the Random Forest and Stochastic Gradient Descent models. The six top features in the SGD model all had roughly equal weights, while the Random Forest model has two features that are much more heavily weighted than the rest of the features. It is also noticeable that the Voter ID Law was the least important feature in the random forest model, and the third-least important feature in the SGD model.
 
