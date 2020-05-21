@@ -30,31 +30,26 @@ This project will investigate two primary issues relating to voting-eligible dem
 
 First, we will investigate how voter ID requirements differ among states with varying demographic populations:
 
-* What is the relationship between minority populations and voter ID requirements? 
-  * Do states with higher minority populations have stricter voter ID requirements?
-* What is the correlation between education level and voter ID requirements?   
-  * Do states with a lower proportion of college graduates have stricter voter ID requirements?
+* What is the relationship between minority populations and voter ID requirements?
+* What is the relationship between education level and voter ID requirements?   
 * What is the relationship between income and voter ID requirements? 
-  * Do states with a lower median household income have stricter voter ID requirements?
 * What is the correlation between the proportion of young voters and voter ID requirements? 
-  * Do states with a higher proportion of young voters have stricter voter ID requirements?
 
 These questions will be used to evaluate the correlation between demographic characteristics and voter ID laws. We will compare the average "strictness" of voter ID laws in states with different demographic makeups. If found to be statistically significant, this correlation can be used to inform discussions and decision making regarding the enacting of these laws more broadly. This study will seels to explore the space and examine whether or not certain demographic groups are subject to harsher voter ID laws than others.
 
 Second, we will investigate how voter turnout rates are affected by demographic makeup at the county level:
 
-* Do states with higher minority populations have lower turnout rates?
+* Do counties with higher minority populations have lower turnout rates?
 * How does the voter turnout of counties with a higher percentage of college graduates compare to counties with a lower percentage of college graduates?
 * How does median household income relate to election turnout rates?
 * How does the voter turnout in counties with a younger voting-eligible population compare to voter turnout in counties with an older voting-eligible population?
 
 These questions will address which demographic groups are less likely to vote within the context of the 2016 election, and explore how voter turnout scales with the demographics of a county as well as the extent to which voter turnout can be predicted by a county’s demographic composition.
 
-Finally, we will combine these two lines of inquiry to assess whether voter ID requirements influence voter turnout rates. This study will explore the hypothesis that voter turnout is higher in states with more relaxed laws, and vice versa, and examine whether voter turnout rates are more accurately predicted when including voter ID requirements with county demographic information.
+Finally, we will combine these two lines of inquiry to assess whether voter ID requirements influence voter turnout rates. This study will explore the hypothesis that voter turnout is higher in states with more relaxed laws, and vice versa.
 
 The following graphic is a representation of the hypothesized relationships
-![flow chart](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/pictures/mlpp_flow.png?raw=true)
-
+![flow chart](figures/mlpp_flow.png)
 
 
 
