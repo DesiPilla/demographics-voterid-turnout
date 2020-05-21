@@ -138,3 +138,31 @@ This figure shows the number of states that fall into the different voting ID la
 ![turnout rate chart](pictures/turnout.png)
 
 This figure shows the percentage of voting eligible persons that casted a ballot in the 2016 Presidential general election. The turnout rate was relatively high nationwide. Turnout rates in the counties along the southwestern counties were much lower than those in northern counties. Counties in the Great Plains, Colorado, and Boston regions had the highest turnout rates.
+
+
+
+# Data Analysis
+
+## Non-Machine Learning Analysis
+
+### Classify "disadvantaged" counties
+
+We will weight certain features to classify counties as either “disadvantaged” or “non-disadvantaged”.
+
+The four features being used to create this "disadvantage index" are the following:
+ * `1 - MedieanHous`: the smaller the median househole income, the more disadvantaged the county is.
+ * `1 - CollegeDeg`: the smaller the percentage of residents with a college degree, the more disadvantaged the county is.
+ * `MedianAge`: the larger the median age, the more disadvantaged the county is.
+ * `not_white`: the larger the minority population, the more disadvantaged the county is.
+
+
+ ![disadvantaged index histogram](figures/disadvantage_index_hist.png)
+
+ **Figure:** The above histogram shows the distribution of counties based on their `Disadvantage Index`. Larger values signify a county is more disadvantaged, and vice versa. The counties labeled "disadvantaged" are those with a disadvantage index in the 85th percentile and above, implying they are the most disadvantaged.
+
+
+![difference between disadvantaged and non-disadvantaged counties](figures/conditionals/disadvantaged_conditional_turnouts.png)
+
+ **Figure:** The above figure shows that there are significant differences between disadvantaged and non-disdvantaged counties in the four major demographic categories. However, this is to be expected, as by definition the "disadvantaged" counties are taken from the lowest 15th percentile in each category.
+
+
