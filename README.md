@@ -83,22 +83,13 @@ The focus of the study is to understand the factors that affect voter turnout ba
 
 ## Data Limitations
 
-[Census Bureau’s MAF/TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html) geographic database is compiled from different secondary resource maps and materials produced by the national mapping agencies, other government departments and [international agencies](https://unstats.un.org/unsd/demog/docs/symposium_08.htm). 
-The database has [limitations](https://www.census.gov/programs-surveys/geography/technical-documentation/naming-convention/cartographic-boundary-file.html
-) and these files should not be used for:
-geographic analysis including area or perimeter calculation.
-geocoding addresses.
-determining precise geographic area relationships.
-The geographic areas may also not align with the same areas from another year.
+Our data is limited by few counts of missing information. This first limitation to note is that the value used for the count of young people is not exact. The original dataset only provided the population size of the age range `15-19`. However, the minimum voting age in the United States is 18. We made the assumption that the population of each age in that range is evenly distributed. 40% of this value (representing voting ages 18 and 19) were used in the counts of young people. We also assumed that all persons were legal citizens with the full right to vote; non-citizens, disenfranchised felons, or any other persons whom are ineligible to vote were not factored into our analysis, yet may be present in the data.
 
+Another limitation of our analysis is that our voting eligible population metric comes from 2015, while the elction took place a year later. All permanent resident changes between counties during that year were not accounted for. Also, some youths that were 17 during the ACS period may have turned 18, a consideration that was not factored into our data. These potential sources of error create an uncertainty in our data and should be acknowledged with any conclusions resulting from this study.
 
-It is worth mentioning that [Content Editing](https://www2.census.gov/programs-surveys/acs/tech_docs/accuracy/MultiyearACSAccuracyofData2018.pdf?#) was conducted on the ACS data. This means that after data collection was completed, the remaining incomplete or inconsistent information was imputed during the final content edit of the collected data. As was done in other surveys and previous censuses, unacceptable entries were assigned to entries for persons or housing units with similar characteristics. Imputing acceptable values in place of blanks or unacceptable entries was done to enhance the usefulness of the data.
+Also, our election results data is aggregated at the county level, and no conditional results regarding specific demographic groups are present in our data. These data are typically gathered by extrapolating survey results, but do not exist concretely. This will limit our ability to make any concrete claims about individuals within demographic groups; we can only find correlations between counties that exhibit certain demogprahic features and the turnout.
 
-Also, data from ACS is only available for geographic areas with a total population of at least [65,000]( http://mcdc.missouri.edu/help/ten-things/ACS.html). This is done to avoid creating tables where the sample size would result in large standard errors (sampling error) [(ACS 5-year 2014-2018)](https://www.census.gov/content/dam/Census/library/publications/2018/acs/acs_general_handbook_2018_ch02.pdf
-).
-
-Our data is limited by few counts of missing information. This first limitation to note is that the value used for the count of young people is not exact. The original dataset only provided the population size of the age range `15-19`. However, the minimum voting age in the United States is 18. We made the assumption that the population of each age in that range is evenly distributed. 40% of this value (representing voting ages 18 and 19) were used in the counts of young people. Also, a single county (Oglala Lakota County) in South Dakota is missing from the turnout dataset. Because it is only one out of over 3000 counties, we are okay moving forward without this piece of information. Finally, Alaska only reported their election results at the state level.; county-specific results are unavailable. For this reason, county-specific analyses cannot be conducted when considering the state of Alaska. This should not affect the analyses of this study, as it is only one state being excluded.
-
+Lastly, out of over 3000 counties a single county (Oglala Lakota County) in South Dakota is missing from the turnout dataset. Finally, Alaska only reported their election results at the state level; county-specific results are unavailable. For this reason, county-specific analyses cannot be conducted when considering the state of Alaska. As this is only one state in 51, we believe the effects on our results will be minimal.
 
 
 
