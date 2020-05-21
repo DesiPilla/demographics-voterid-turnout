@@ -422,3 +422,14 @@ In our statistical analyses, we found that there was no statistically significan
 First, there was no trend in turnout rate. Meaning, there were not lower turnout rates in counties subject to stricter laws, and vice versa. While counties saw a difference across all Voter ID classes, there was no trend suggesting stricter laws produced lower turnout rates.
 
 Second, from the feature importances of both the Random Forest and SGD models, we see that Voter ID requirement was the least and 3rd-least, respectively, important feature when predicting turnout rates. This suggests that any relevance of Voter ID laws is strongly overshadowed by the importance of demographic features, specifically at the county level.
+
+# Team Member Contributions
+
+**Grace Ashley:** I was responsible for writing the section of the background about general demographics of the US and literature on how it is believed to affect elections. I prepared the secion on data limitations and performed the Random Forest analysis of the data(Plots, Cross-validation and Predictions).
+
+
+**Muhammet Furkan Karakaya:** My contribution to the study is to provide a cohesive explanation for the role of voting and voter turnout in democracies, particularly in the United States. I also contribute to the study by examining demographic dataset at state level to check if there is an alignment between demographics and voter ID laws at state level. Then, I investigate the effects of demographics and voter ID laws on voter turnout rate.
+
+**Desiderio Pilla:** I was responsible for writing the intitial problem statement section of the introduction. I also gathered and cleaned the five datasets we are using for this study (the 'Data Collection' section) and created all of the figures in the data exploration section. My contribution to the Data Analysis section were the Non-Machine learning methods, as well as the county clustering methods. Laslty, I formalized the conclusions section of the report.
+
+**Lan Yu:** I was responsible for writting the introduction of voter ID Law and the relevant previous research between Voter ID Law and Voter turnout. I revised the problem statement section of the introduction. I also prepared data sources and data features. I performed the Stochastic Gradient Descent analysis of the data(Plots, Cross-validation and Predictions).
