@@ -166,3 +166,44 @@ The four features being used to create this "disadvantage index" are the followi
  **Figure:** The above figure shows that there are significant differences between disadvantaged and non-disdvantaged counties in the four major demographic categories. However, this is to be expected, as by definition the "disadvantaged" counties are taken from the lowest 15th percentile in each category.
 
 
+## Conditional turnout rates and ANOVA
+
+Below, the conditional Voter ID laws and turnout rates are examined. For each of the four main demographic categories listed above, the data was split into equally-sized bins. For Voter ID laws, the data was analyzed at the *state* level, while for turnout rates, the data was analyzed at the *county* level. This was chosen because Voter ID laws are state-wide regulations, and thus should be compared with state-wide demographic features. However, states do not have homogenoeus demographic compositions. For this reason, we believe it is best to analyze turnout rates at the county level. We are better able to get a more granular perspective on how demographic features related to turnout rates in the 2016 election this way.
+
+![](figures/conditionals/medianhous_conditional_idlaw.png)
+
+**Figure:** The above figure shows that there were **not** significant differences between the Voter ID laws of states with different median household incomes. The states were split into four equally-sized quantiles, and their mean Voter ID law was plotted. Though there appear to be some differences, the sample size was not large enough to reduce the uncertainty in these measures.
+
+![](figures/conditionals/medianhous_conditional_turnouts.png)
+
+**Figure:** The above figure shows that there **were** significant differences between the turnout rate of counties with different median household incomes. The counties were split into four equally-sized quantiles, and their mean turnout rate was plotted. The chart shows a trend of increasing turnout rate in counties with an increase in median household income.
+
+![](figures/conditionals/collegedeg_conditional_idlaw.png)
+
+**Figure:** The above figure shows that there were **not** significant differences between the Voter ID laws of states with different college degree rates. The states were split into four equally-sized quantiles, and their mean Voter ID law was plotted. Though there appear to be some differences, the sample size was not large enough to reduce the uncertainty in these measures.
+
+![](figures/conditionals/collegedeg_conditional_turnouts.png)
+
+**Figure:** The above figure shows that there **were** significant differences between the turnout rate of counties with different college degree rates. The counties were split into four equally-sized quantiles, and their mean turnout rate was plotted. The chart shows a trend of increasing turnout rate in counties with an increase in college degree rate.
+
+
+![](figures/conditionals/medianage_conditional_idlaw.png)
+
+**Figure:** The above figure shows that there were **not** significant differences between the Voter ID laws of states with different median ages. The states were split into three equally-sized bins, and their mean Voter ID law was plotted. Though there appear to be some differences, the sample size was not large enough to reduce the uncertainty in these measures.
+
+![](figures/conditionals/medianage_conditional_turnouts.png)
+
+**Figure:** The above figure shows that there **were** significant differences between the turnout rate of counties with different median ages. The counties were split into three equally-sized bins, and their mean turnout rate was plotted. The chart shows a trend of increasing turnout rate in counties with an increase in median age.
+
+
+
+![](figures/conditionals/minority_conditional_idlaw.png)
+
+**Figure:** The above figure shows that there were **not** significant differences between the Voter ID laws of states with different minority percentages. The states were split into five equally-sized bins, and their mean Voter ID law was plotted. Though there appear to be some differences, the sample size was not large enough to reduce the uncertainty in these measures.
+
+
+![](figures/conditionals/minority_conditional_turnouts.png)
+**Figure:** The above figure shows that there **were** significant differences between the turnout rate of counties with different minority rates. The counties were split into five equally-sized bins, and their mean turnout rate was plotted. The chart shows a trend of decreasing turnout rate in counties with an increase in minority percentage.
+
+
+
