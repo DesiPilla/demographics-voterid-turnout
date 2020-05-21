@@ -337,3 +337,39 @@ As before, we first compare the clusters using the Fowlkes-Mallows index.
 The Fowlkes Mallows index for the demographic clustering vs. the Voter ID law clustering was low (0.243), which indicates that these two clusters are not very similar.
 
 When observing the inertia of each clustering on the turnout rates of the states, the demographic clustering a value 1.03 times smaller than the Voter ID law clustering. This supports the claim that states were more likely to have turnout rates similar to other states with the same demographic makeup than they were to have similar turnout rates to outher states with the same Voter ID law.
+
+
+### Predicting Turnout Rates
+
+**Question**
+
+Are we able to predict the turnout rate of a given county based on its demographic features and the Voter ID law its citizens are subject to? Which features are the most important in making these predictions?
+
+</br>
+
+**Method**
+
+We will create two separate models:
+
+1. Random Forest regressor
+2. Stochastic Gradient Descent
+
+These two models can then be compared based on their mean square error (MSE) and mean absolute error (MAE) on a test set. We will also be able to extract feature importances after the models are created to see what influenced their decisions.
+
+## Compare Random Forest and SGD Models
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/rf_vs_sgd.png?raw=true)
+
+**Figure:** This chart shows the Random Forest and SGD model predictions vs the actual turnout rates. The red line represents a "perfect" fit. We can see that our predictions tend to this line quite well, and do so with similar variance for both low and high turnout rates. From this figure, it is not trivial whether one model has a better performance than the other.
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/rf_vs_sgd.png?raw=true)
+
+**Figure:** This figure shows the difference in feature importances between the Random Forest and Stochastic Gradient Descent models. The six top features in the SGD model all had roughly equal weights, while the Random Forest model has two features that are much more heavily weighted than the rest of the features. It is also noticeable that the Voter ID Law was the least important feature in the random forest model, and the third-least important feature in the SGD model.
+
+
+||Random Forest|SGD|
+|--|--|--|
+|MSE| 0.0041|0.0055|
+|MAE|4.88%|5.73%|
+
+From the above metrics, it is more clear that the Random Forest model is better able to predict the turnout rates of a county from its demographic makeup.
