@@ -207,3 +207,61 @@ Below, the conditional Voter ID laws and turnout rates are examined. For each of
 
 
 
+# Machine Learning Analysis
+
+### Clustering at the County Level
+
+**Question**
+
+Were counties more likely to have similar turnout rates to other counties with:
+
+* similar demographic composition or
+* the same Voter ID law
+
+</br>
+
+**Method**
+
+We will create two separate clusterings.
+
+1. Using k-means clustering, partition the counties based on demographic features.
+2. Partition the counties based on their Voter ID requirements (there are five categories, and thus five clusters).
+
+These different clusterings can then be compared to one another using the Fowlkes-Mallows index to see how similar they are. The inertia for the clusterings (on the counties' respective turnout data) can also be calculated to see which clustering was better able to partition the county data.
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/clusters.png?raw=true)
+
+**Figure:** This figure shows a plot of all counties, categorized by their demographic similarity. Counties were split into 5 clusters, where they were grouped by the similarity in their demographic makeup.
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/clusters.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/cluter_1.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/cluter_2.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/cluter_3.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/cluter_4.png?raw=true)
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/cluter_5.png?raw=true)
+
+**Figure:** The above figures show each demographic cluster plotted exclusively. This is helpful to distinguish where similar counties are located. Cluster 1 is overwhelmingly represented by counties in the southern half of the United States. Cluster 2 is very sporadic and not unique to any distinguishable geographic region. Cluster 3 is more sporadic, yet contains many of the northern-most counties, as well as some in the central region of the United States and in Florida. Cluster 4 is most heavily dominated by urban population centers; counties along the Northeastern seaboard (Boston, NYC, Philadelphia, DC) and west coast (San Francisco, LA) make up this cluster. Lastly, cluster 5 is widespread across America, with most of the counties in the Midwest (Ohio, Michigan, Wisconsin, Iowa, Missouri) falling into this group.
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/idlaw_cluter_3.png?raw=true)
+
+**Figure:** The figures above display the Voter ID Requirements of the counties in deomgraphic cluster 3. All 5 clusters had distributions resembling this one. Each Voter ID law is well represented among all 5 clusters. This is likely because Voter ID laws are established at the state level, while the clusters were formed at the county level. Demographics are not homogeneous across all counties in a state, leading to there being at least a couple of counties from each demographic cluster in most states.
+
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/idlaw_anova.png?raw=true)
+
+
+**Figure:** The above figure shows that there **were** significant differences between the Voter ID laws between the five demographic county clusters. The cluster with the strictest requirements was cluster 1, which we discovered was comprised of mostly southern counties. Clusters 3 and 4 (which we discovered contained mostly northern and urban counties, respectively) had the most relaxed Voter ID requirements.
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/turnout_anova_idlaw.png?raw=true)
+
+**Figure:** The above figure shows that there **were** significant differences between the Voter ID laws between the five demographic county clusters. Clusters 1 and 5 had the lowest turnout rates. Cluster 1 was also found to have the strictest Voter ID requirements. Clusters 3 and 4 (which we discovered contained mostly northern and urban counties, respectively) had the highest turnout rates. We also noted in the previous chart that these clusters had the most relaxed Voter ID requirements.
+
+![](https://github.com/DesiPilla/demographics-voterid-turnout/blob/master/figures/county%20demographic%20clusters/turnout_anova.png?raw=true)
+
+
+**Figure:** The above figure shows that there **were** significant differences between the the turnout rates of counties subject to different Voter ID laws. However, the turnout rate does not show a trend; the turnout rate does not appear to exclusively decrease or increase with a change in the Voter ID requirement.
